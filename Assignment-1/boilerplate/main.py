@@ -152,7 +152,7 @@ def main():
         for algo in table.field_names:
             if algo == "Test case":
                 continue
-            print(f"algo name -> {algo} and test case num -> {test_case_num} ")
+            # print(f"algo name -> {algo} and test case num -> {test_case_num} ")
             if algo == "Backtracking" or algo == "Bisection":
                 try:
                     ans = steepest_descent(
@@ -203,7 +203,7 @@ def main():
                     print(e)
                     row += [None]
         table.add_row(row, divider=test_case_num in dividers)
-        print("----------------------------------------------------------------------------------------------------")
+        # print("----------------------------------------------------------------------------------------------------")
     print(table)
 
 

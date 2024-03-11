@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import numpy.typing as npt
 def backtrackingWithArmijoCondition(f, d_f, initialPoint):
+    initPt=initialPoint
     alpha_0, rho, c, k, epsilon = 10.0, 0.75, 0.001, 0, 1e-6
     gradient = d_f(initialPoint)
     fValue=[]
@@ -23,9 +24,12 @@ def backtrackingWithArmijoCondition(f, d_f, initialPoint):
         initialPoint = initialPoint + alpha*dk
         gradient = d_f(initialPoint)
         k = k+1
+    if(np.linalg.norm(gradient) > epsilon):
+        print(f"Steepest descent algorithms failed to converge under Armijo condition in case of {f.__name__} function at initial point is {initPt}.\n")
     return initialPoint, fValue, d_fValue, xValues, yValues
 
 def bijectionMethodWithWolfeCondition(f, d_f, initialPoint):
+    initPt=initialPoint
     c1, c2, alpha_0, t, beta_0, k, epsilon = 0.001, 0.1, 0, 1, 1e6, 0, 1e-6
     gradient = d_f(initialPoint)
     fValue=[]
@@ -52,6 +56,8 @@ def bijectionMethodWithWolfeCondition(f, d_f, initialPoint):
         initialPoint = initialPoint + t*dk
         gradient = d_f(initialPoint)
         k = k+1    
+    if(np.linalg.norm(gradient) > epsilon):
+        print(f"Steepest descent algorithms failed to converge under Bijection method with wolfe condition in case of {f.__name__} function at initial point is {initPt}.\n")
     return initialPoint, fValue, d_fValue, xValues, yValues
 
 def plotGraph(functionValue,f,initialPoint, condition, type):
@@ -127,6 +133,7 @@ def steepest_descent(
     pass
 
 def pureNewtonsMathod(f, d_f, d2_f, initialPoint):
+    initPt=initialPoint
     epsilon, k = 1e-6, 0
     fValue=[]
     d_fValue=[]
@@ -143,9 +150,12 @@ def pureNewtonsMathod(f, d_f, d2_f, initialPoint):
         d_fValue.append(np.linalg.norm(-gradient))
         initialPoint = initialPoint + dk
         k = k+1
+    if(np.linalg.norm(gradient) > epsilon):
+        print(f"newton method failed to converge under Pure Newtons method in case of {f.__name__} function at initial point is {initPt}.\n")
     return initialPoint, fValue, d_fValue, xValues, yValues
 
 def dampedNewtonMethod(f, d_f, d2_f, initialPoint):
+    initPt=initialPoint
     epsilon, k, alpha, beta = 1e-6, 0, 0.001, 0.75
     fValue=[]
     d_fValue=[]
@@ -165,9 +175,13 @@ def dampedNewtonMethod(f, d_f, d2_f, initialPoint):
         d_fValue.append(np.linalg.norm(-gradient))        
         initialPoint = initialPoint + ( tk * dk )
         k = k+1
+    if(np.linalg.norm(gradient) > epsilon):
+        print(f"newton method failed to converge under Damped Newton method in case of {f.__name__} function at initial point is {initPt}.\n")
     return initialPoint, fValue, d_fValue, xValues, yValues
 
 def levenbergMarquardtModification(f, d_f, d2_f, initialPoint):
+    
+    initPt=initialPoint
     epsilon, k = 1e-6, 0
     gradient = d_f(initialPoint)
     fValue=[]
@@ -191,9 +205,12 @@ def levenbergMarquardtModification(f, d_f, d2_f, initialPoint):
         initialPoint = initialPoint + dk
         gradient = d_f(initialPoint)
         k = k+1
+    if(np.linalg.norm(gradient) > epsilon):
+        print(f"newton method failed to converge under Levenberg Marquardt Modification method in case of {f.__name__} function at initial point is {initPt}.\n")
     return initialPoint, fValue, d_fValue, xValues, yValues
 
 def combiningDampedNewtonMethodWithLMM(f, d_f, d2_f, initialPoint):
+    initPt=initialPoint
     alpha_0, rho, c, k, epsilon = 10.0, 0.75, 0.001, 0, 1e-6
     gradient = d_f(initialPoint)
     fValue=[]
@@ -221,6 +238,9 @@ def combiningDampedNewtonMethodWithLMM(f, d_f, d2_f, initialPoint):
         initialPoint = initialPoint + alpha*dk
         gradient = d_f(initialPoint)
         k = k+1
+    if(np.linalg.norm(gradient) > epsilon):
+        print(f"newton method failed to converge under Combining Damped Newton\'s Method with Levenberg-Marquardt modification method in case of {f.__name__} function at initial point is {initPt}.\n")
+    
     return initialPoint, fValue, d_fValue, xValues, yValues
 
 # Do not rename or delete this function
