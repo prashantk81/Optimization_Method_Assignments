@@ -1,0 +1,279 @@
+PGD test case 0
+Point: [-3.  -3.5  2.  -4. ]
+Value at point: 66.7490177722029
+Gradient norm at point: 17.846404999350426
+L2 constraint
+Center: [-1. -1. -1. -1.]
+Max distance allowed: 13.0
+Distance is 5.315
+Is the constraint violated: False
+_______________________________________________________________
+
+PGD test case 1
+Point: [-3.  -3.5  2.  -4. ]
+Value at point: 66.7490177722029
+Gradient norm at point: 17.846404999350426
+L2 constraint
+Center: [-1. -1. -1. -1.]
+Max distance allowed: 10.0
+Distance is 5.315
+Is the constraint violated: False
+_______________________________________________________________
+
+PGD test case 2
+Point: [-3. -0.]
+Value at point: 16.99902642846688
+Gradient norm at point: 8.061986507337819
+Box constraint
+Lower bound and Upper bound for dimension 0: -4.0 and 2.0
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Lower bound and Upper bound for dimension 1: -4.0 and 2.0
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Does the point satisfy all the constraints: True
+_______________________________________________________________
+
+PGD test case 3
+Point: [-3. -0.]
+Value at point: 16.99902642846688
+Gradient norm at point: 8.061986507337819
+Box constraint
+Lower bound and Upper bound for dimension 0: -4.0 and 1.5
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Lower bound and Upper bound for dimension 1: -4.0 and 1.5
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Does the point satisfy all the constraints: True
+_______________________________________________________________
+
+PGD test case 4
+Point: [ 1.5 -1.5]
+Value at point: 8.749003540824706
+Gradient norm at point: 6.963812082839245
+L2 constraint
+Center: [0. 0.]
+Max distance allowed: 4.0
+Distance is 2.121
+Is the constraint violated: False
+_______________________________________________________________
+
+PGD test case 5
+Point: [2.999 2.001]
+Value at point: 0.4990112501404389
+Gradient norm at point: 0.7197886106676677
+Box constraint
+Lower bound and Upper bound for dimension 0: 2.0 and 5.0
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Lower bound and Upper bound for dimension 1: 2.0 and 5.0
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Does the point satisfy all the constraints: True
+_______________________________________________________________
+
+PGD test case 6
+Point: [ 7. -6.]
+Value at point: 42.2590773165661
+Gradient norm at point: 9.192331295699928
+Box constraint
+Lower bound and Upper bound for dimension 0: -10.0 and 10.0
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Lower bound and Upper bound for dimension 1: -10.0 and 10.0
+Does the point violate lower bound: False
+Does the point violate upper bound: False
+Does the point satisfy all the constraints: True
+_______________________________________________________________
+
+PGD test case 7
+Point: [-2.   1.5]
+Value at point: 3.0640684886301672
+Gradient norm at point: 2.4745377418150265
+L2 constraint
+Center: [0. 0.]
+Max distance allowed: 4.0
+Distance is 2.5
+Is the constraint violated: False
+_______________________________________________________________
+
+PGD test case 8
+Point: [1.499 0.501]
+Value at point: 0.28904325053806834
+Gradient norm at point: 0.7080241550107585
+L2 constraint
+Center: [1.5 1.5]
+Max distance allowed: 1
+Distance is 0.999
+Is the constraint violated: False
+_______________________________________________________________
+
+Dual ascent test case 0
+KKT conditions
+Point: [2. 2.]
+Value at point: -2.0
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-0.0 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [-0. -0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 1
+KKT conditions
+Point: [1.899 2.146]
+Value at point: -1.953655928918741
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.092 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+0.0 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [-0. -0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 2
+KKT conditions
+Point: [1. 1.]
+Value at point: -0.9999999999999445
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.0 1.0 0.0 1.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-2.0 0.0 -2.0 -0.0 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 0.0 -0.0 -0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [0. 0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 3
+KKT conditions
+Point: [2. 2.]
+Value at point: -2.0
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.0 0.0 0.0 0.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-2.0 -1.0 -2.0 -1.0 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 -0.0 -0.0 -0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [-0. -0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 4
+KKT conditions
+Point: [3. 3.]
+Value at point: -0.9999999999999449
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+1.0 0.0 1.0 0.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-0.0 -1.0 0.0 -1.0 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 -0.0 0.0 -0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [ 0. -0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 5
+KKT conditions
+Point: [0.005 0.005]
+Value at point: 9.464375658696129e-07
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.0 0.0 0.0 0.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-0.005 -0.995 -0.005 -0.995 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 -0.0 -0.0 -0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [0. 0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 6
+KKT conditions
+Point: [1.003 1.003]
+Value at point: 0.040277108343949264
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.045 0.0 0.045 0.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-0.003 -0.997 -0.003 -0.997 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 -0.0 -0.0 -0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [-0.005 -0.005]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
+Dual ascent test case 7
+KKT conditions
+Point: [-0.5   -0.462]
+Value at point: 0.009615384589892792
+Dual feasibility: Lambdas should be >= 0
+Values of lambdas are:
+0.0 0.038 0.0 0.0 
+Do the lambdas satisfy Dual feasibility: True
+Primal feasibility: Constraints should be <= 0
+Values of constraints are:
+-0.5 0.0 -0.038 -0.962 
+Does the point satisfy primal feasibility: True
+Complimentary slackness: Lambda_i * constraint_i should be = 0
+Values of lambda_i * constraint_i are:
+-0.0 0.0 -0.0 -0.0 
+Is complementary slackness satisfied: True
+Stationary condition: derivative of Lagrangian w.r.t. x should be 0
+Value of derivative of Lagrangian w.r.t. x is: [-0. -0.]
+Is stationary condition satisfied?: True
+____________________________________________________________________
+
